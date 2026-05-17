@@ -28,6 +28,7 @@ Telecom-Churn-Prediction/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+|__requirements.txt
 ```
 
 ---
