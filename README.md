@@ -119,10 +119,12 @@ This improved churn recall and overall model performance.
 
 ## 📈 Results
 
+
+
 ### Model Comparison
 
 | Model | Accuracy | ROC-AUC |
-|---|---:|---:|
+|---|---|---|
 | Logistic Regression | 79.89% | 85.89% |
 | Random Forest | 79.08% | 85.14% |
 | XGBoost | 78.99% | 84.10% |
@@ -133,23 +135,23 @@ This improved churn recall and overall model performance.
 ## 🏆 Final Selected Model — Tuned Logistic Regression
 
 | Metric | Score |
-|---|---:|
+|---|---|
 | ROC AUC | 0.8587 |
 | Recall (Churn) | 0.76 |
 | Precision (Churn) | 0.58 |
 | F1 Score | 0.66 |
 | Accuracy | 78% |
 
-Confusion Matrix:
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
 
-```text
-[[1217 322]
- [137 437]]
-```
+**Interpretation:**
+- ✅ 1217 non-churners correctly identified
+- ✅ 437 actual churners correctly caught
+- ⚠️ 137 churners were missed (false negatives)
+- ⚠️ 322 non-churners were wrongly flagged (false positives)
 
-> ROC-AUC score of **0.8587** indicates strong class separation ability.
-
-> Recall of **0.76** means the model successfully identifies **76% of customers who actually churn**.
+> A Recall of **0.76** means the model catches **76% of customers who will actually churn** — critical for proactive retention.
 
 ---
 
