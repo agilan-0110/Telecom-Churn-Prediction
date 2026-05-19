@@ -7,3 +7,4 @@ xgboost
 imbalanced-learn
 pickle5
 jupyter
+streamlit
