@@ -129,10 +129,11 @@ monthlycharges = st.slider(
     70
 )
 
-totalcharges = st.number_input(
-    "Total Charges",
-    value=1000
-)
+totalcharges = monthlycharges * tenure
+
+st.write(f"Total Charges: {totalcharges:.2f}")
+
+
 
 service_count = sum([
 onlinesecurity=="Yes",
