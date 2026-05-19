@@ -10,7 +10,7 @@ Customer churn is one of the biggest challenges in the telecom industry. Acquiri
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 Telecom-Churn-Prediction/
@@ -25,10 +25,15 @@ Telecom-Churn-Prediction/
 ├── models/
 │   └── churn_model_final.pkl
 │
+├── images/
+│   ├── churn_distribution.png
+│   └── confusion_matrix.png
+│
+├── app.py
 ├── .gitignore
 ├── LICENSE
-└── README.md
-|__requirements.txt
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -194,9 +199,42 @@ Run notebooks in order:
 
 ---
 
+## 🖥️ Streamlit Web App
+
+An interactive web application built with Streamlit that allows users to predict customer churn in real time.
+
+### Features
+- 📋 User-friendly form to enter customer details
+- ⚡ Instant churn prediction using the trained Logistic Regression model
+- 📊 Shows prediction probability score
+
+### How to Run Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/agilan-0110/Telecom-Churn-Prediction.git
+cd Telecom-Churn-Prediction
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the app
+streamlit run app.py
+```
+
+> App will open at `http://localhost:8501` in your browser
+
+---
+
+## 🚀 Future Work
+
+- [ ] Deploy app on **Streamlit Cloud** (free hosting)
+- [ ] Add SHAP explainability — show *why* a customer is predicted to churn
+- [ ] Add batch prediction — upload a CSV and predict for multiple customers at once
+- [ ] Connect to live CRM data
+
 ## 🔮 Future Improvements
 
-- Build Streamlit web application
 - Deploy model on cloud
 - Add real-time churn prediction
 - Experiment with advanced ensemble models
